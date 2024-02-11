@@ -1,0 +1,24 @@
+#define IDR_MENU 10000
+#define IDM_ 10002
+#define boli2 10006
+#define eu2 10007
+#define do2 10008
+#define IDM_ 10001
+#define boli1 10003
+#define eu1 10004
+#define do1 10005
+IDR_MENU MENUEX
+BEGIN
+  POPUP "Moneda a Convertir",IDM_,,0x00000008
+  BEGIN
+    MENUITEM "Boliviano",boli2
+    MENUITEM "Euro",eu2
+    MENUITEM "Dolar",do2
+  END
+  POPUP "Elije tu moneda",IDM_,,0x00000008
+  BEGIN
+    MENUITEM "Boliviano",boli1
+    MENUITEM "Euro",eu1,,0x00000008
+    MENUITEM "Dolar",do1
+  END
+END
